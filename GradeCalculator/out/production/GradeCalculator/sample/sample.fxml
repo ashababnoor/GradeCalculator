@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="340.0" prefWidth="454.0">
+         <children>
+            <Label id="titleLabel" alignment="CENTER" layoutX="151.0" layoutY="23.0" text="Grade Calculator">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="quizField0" layoutX="133.0" layoutY="76.0" prefHeight="26.0" prefWidth="82.0" />
+            <TextField fx:id="quizField1" layoutX="227.0" layoutY="76.0" prefHeight="26.0" prefWidth="82.0" />
+            <TextField fx:id="quizField2" layoutX="319.0" layoutY="76.0" prefHeight="26.0" prefWidth="82.0" />
+            <TextField fx:id="quizField3" layoutX="133.0" layoutY="107.0" prefHeight="26.0" prefWidth="82.0" />
+            <TextField fx:id="quizField4" layoutX="227.0" layoutY="107.0" prefHeight="26.0" prefWidth="82.0" />
+            <TextField fx:id="quizField5" layoutX="319.0" layoutY="107.0" prefHeight="26.0" prefWidth="82.0" />
+            <Label fx:id="quizLabel1" layoutX="35.0" layoutY="88.0" text="Quiz Marks:" />
+            <Label fx:id="quizLabel2" layoutX="33.0" layoutY="108.0" text="(Out of 20)" />
+            <Label fx:id="attendanceLabel" layoutX="33.0" layoutY="152.0" text="Attendance:" />
+            <TextField fx:id="attendanceField" layoutX="134.0" layoutY="149.0" prefHeight="26.0" prefWidth="82.0" />
+            <Label fx:id="assignmentLabel" layoutX="237.0" layoutY="151.0" text="Assignment:" />
+            <TextField fx:id="assignmentField" layoutX="317.0" layoutY="148.0" prefHeight="26.0" prefWidth="82.0" />
+            <Label fx:id="midLabel" layoutX="33.0" layoutY="183.0" text="Mid Exam:" />
+            <TextField fx:id="midField" layoutX="134.0" layoutY="181.0" prefHeight="26.0" prefWidth="82.0" />
+            <Label fx:id="finalLabel" layoutX="237.0" layoutY="185.0" text="Final Exam:" />
+            <TextField fx:id="finalField" layoutX="317.0" layoutY="180.0" prefHeight="26.0" prefWidth="82.0" />
+            <Button fx:id="calculateButton" alignment="CENTER" layoutX="197.0" layoutY="235.0" mnemonicParsing="false" onAction="#calculateResult" text="Calculate!" />
+            <Label fx:id="gradeLabel" alignment="CENTER" layoutX="92.0" layoutY="280.0" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
