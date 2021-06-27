@@ -78,7 +78,7 @@ public class Controller {
         if (totalMarks >= 78) grade = "B | Grade Points: 3.00";
         if (totalMarks >= 82) grade = "B+ | Grade Points: 3.33";
         if (totalMarks >= 86) grade = "A- | Grade Points: 3.67";
-        if (totalMarks >= 90) grade = "A+ | Grade Points: 4.00";
+        if (totalMarks >= 90) grade = "A | Grade Points: 4.00";
 
         gradeLabel.setText("Grade: "+grade+" | Marks: "+String.format("%.2f", totalMarks));
     }
